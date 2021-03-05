@@ -10,7 +10,7 @@ public class EmployeeMain {
         context.refresh();
         Employee employee= context.getBean(Employee.class);
         System.out.println("Id: "+employee.getEmployeeId()+" Name: "+employee.getEmployeeName()+" Salary: "
-				+employee.getSalary()+" Age: "+employee.getAge()+" "+employee.getBusinessUnit());
+				+employee.getSalary()+" Age: "+employee.getAge());
         
         SBUBean sbu = context.getBean(SBUBean.class);
         System.out.println("SbuId: "+sbu.getSbuId()+" SbuHead: "+sbu.getSbuHead()+" SbuName: "+sbu.getSbuName());
