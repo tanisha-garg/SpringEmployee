@@ -2,6 +2,7 @@ package com.cg;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
+import java.util.*;
 
 @Component
 public class SBUBean {
@@ -12,6 +13,12 @@ public class SBUBean {
 	private String sbuName;
 	@Value("${sbu.head}")
 	private String sbuHead;
+	
+	List<Employee>list = new ArrayList<>();
+	
+	public List<Employee> getList(){
+		return list;
+	}
 	
 	public int getSbuId() {
 		return sbuId;
